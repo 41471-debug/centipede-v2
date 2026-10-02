@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Classic Arcade Centipede - Um jogo de arcade clássico dos anos 1980 recriado em pixel art 8-bit">
+    <title>🕹️ Classic Arcade Centipede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="arcade-cabinet">
+        <div id="crt-overlay"></div>
+        <div id="scanlines"></div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="start-screen">
+            <div class="title-text">CENTIPEDE</div>
+            <div class="subtitle-text">CLASSIC ARCADE</div>
+            <div class="blink-text">PRESS ENTER OR CLICK TO START</div>
+            <div class="controls-info">
+                <p>← → ↑ ↓ : MOVE</p>
+                <p>SPACE : FIRE</p>
+                <p>P : PAUSE</p>
+            </div>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <div class="title-text game-over-text">GAME OVER</div>
+            <div class="final-score">SCORE: <span id="final-score-value">0</span></div>
+            <div class="blink-text">PRESS ENTER TO PLAY AGAIN</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
